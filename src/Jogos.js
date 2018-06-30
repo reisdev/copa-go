@@ -15,7 +15,7 @@ class Jogo extends Component {
         const away = this.props.away_team
         return <View style={style.card}>
                 <Text style={style.cardTitle}> 
-                    {home.country} {home.goals} x {away.goals} {away.country}
+                    <Text style={home.country === this.props.winner ? style.winner : ''}>{home.country} {home.goals}</Text> x <Text style={away.country === this.props.winner ? style.winner : ''}>{away.goals} {away.country}</Text>
                 </Text>
                 <Text style={style.cardText}> 
                     Cidade: {this.props.venue}

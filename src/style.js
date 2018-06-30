@@ -30,5 +30,8 @@ export default style = StyleSheet.create({
     },
     cardText: {
         fontSize: 15
+    },
+    winner: {
+        color: 'green'
     }
 })

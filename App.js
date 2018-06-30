@@ -7,9 +7,9 @@ import ListaJogos from './src/Jogos'
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Header/>
-        <ListaJogos/>
+      <View style={{flex: 1}}>
+        <Header style={{flex:1}}/>
+        <ListaJogos style={{flex:2}}/>
       </View>
     );
   }
