@@ -10,11 +10,9 @@ export default style = StyleSheet.create({
     page:{
         width: '100%',
         height: '100%',
+        paddingBottom: 116,
         alignContent: 'center',
         backgroundColor: 'white'
-    },
-    btn: {
-
     },
     card: {
         position: 'relative',

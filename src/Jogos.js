@@ -15,7 +15,7 @@ class Jogo extends Component {
         const home = this.props.home_team
         const away = this.props.away_team
         return (
-            <Card style={{backgroundColor: this.props.status === 'completed' ? 'green': 'white'}}>
+            <Card>
                 <View style={style.card}>
                     <Text style={style.cardTitle}> 
                         <Text style={home.country === this.props.winner ? style.winner : ''}>{home.country} {home.goals}</Text> x <Text style={away.country === this.props.winner ? style.winner : ''}>{away.goals} {away.country}</Text>
@@ -29,7 +29,7 @@ class Jogo extends Component {
     }
 }
 
-class ListaJogos extends Component {
+class ListaJogos extends React.PureComponent {
     state= {
         jogos: [],
         refreshing: true,

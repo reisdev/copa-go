@@ -6,7 +6,6 @@ import FontAwesome from './node_modules/react-native-vector-icons/Fonts/FontAwes
 
 import { Text, View } from 'react-native';
 import { Toolbar } from 'react-native-material-ui'
-import SideMenu from 'react-native-side-menu'
 import ListaJogos from './src/Jogos'
 
 class Menu extends Component {
@@ -19,9 +18,6 @@ class Menu extends Component {
 
 export default class App extends React.Component {
   state = { loaded: false, searchWord: '', endpoint: '', filter: 'completed', order: 'DESC', country: ''}
-  openNav = (e) => {
-    this.setState({nav: !this.state.nav})
-  }
   header = {
     leftElement : "menu",
     centerElement : "CopaGO",
@@ -37,13 +33,13 @@ export default class App extends React.Component {
           this.setState({endpoint: '', filter: 'completed'})
           break
         case 1:
-          this.setState({endpoint: 'current', filter: ''}, () => { console.log(this.state)})
+          this.setState({endpoint: 'current', filter: ''})
           break
         case 2:
           this.setState({endpoint: 'today', filter: ''})
           break
         case 3:
-          this.setState({filter: 'future'})
+          this.setState({filter: 'future', order: 'DESC'})
           break
         case 4:
           this.setState({filter: 'completed'})

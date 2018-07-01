@@ -1,5 +1,8 @@
 {
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 1142
+  "packagerPid": 30873,
+  "expoServerNgrokUrl": "https://j8-tg7.matheus-reis.copa-go.exp.direct",
+  "packagerNgrokUrl": "https://packager.j8-tg7.matheus-reis.copa-go.exp.direct",
+  "ngrokPid": 30945
 }
