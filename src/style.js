@@ -1,11 +1,17 @@
 import { StyleSheet } from 'react-native'
 
 export default style = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
     page:{
         width: '100%',
-        height: 'auto',
-        paddingBottom: 80,
-        alignContent: 'center'
+        height: '100%',
+        alignContent: 'center',
+        backgroundColor: 'white'
     },
     btn: {
 
@@ -14,16 +20,8 @@ export default style = StyleSheet.create({
         position: 'relative',
         display: 'flex',
         flexDirection: 'column',
-        minWidth: 20,
-        backgroundColor: '#fff',
-        borderWidth: 1,
-        borderStyle: 'solid',
-        borderColor: 'rgba(0,0,0,.125)',
-        borderRadius: 0.25,
         justifyContent: 'center',
         alignItems: 'center',
-        margin: 10,
-        padding: 10
     },
     cardTitle: {
         fontSize: 20
